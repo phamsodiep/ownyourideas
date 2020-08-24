@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html b:css='false' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+    <head>
+        <b:skin version='1.3.0'><![CDATA[]]></b:skin>
+    </head>
+    <body>
+        <b:section id='page_body'/>
+        <script>
+          var xmlhttp = new XMLHttpRequest();
+          var url = &quot;https://www.googleapis.com/blogger/v3/blogs/344923986083328903/posts/2676345261487196185?key=KEY&quot;;
+          xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 &amp;&amp; this.status == 200) {
+                  alert(this.responseText);
+              }
+          };
+          xmlhttp.open(&quot;GET&quot;, url, true);
+          xmlhttp.send();
+        </script>
+    </body>
+</html>

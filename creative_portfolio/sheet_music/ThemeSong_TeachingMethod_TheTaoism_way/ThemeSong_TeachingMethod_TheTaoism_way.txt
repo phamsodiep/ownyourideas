@@ -1,0 +1,20 @@
+How to make theme song
+
+Reduce volume sound with
+  bin\ffmpeg -i a.wav -af "volume=0.04"  y.wav
+
+Reduce song duration:
+  Assumption: durtion ~49 seconds
+  bin\ffmpeg -i y.wav -ss 00:00:00 -to 00:00:48  x.wav
+
+Repeat song to be theme song:
+  copy con list.txt
+  file 'x.wav'
+  file 'x.wav'
+  file 'x.wav'
+  file 'x.wav'
+
+  bin\ffmpeg -f concat -i list.txt a.mp3
+
+Fadeout song for endding:
+  T.B.D

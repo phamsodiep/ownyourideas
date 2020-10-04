@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PencilDocument>
+<document>
+  <projectdata>
+    <currentFrame value="1"/>
+    <currentColor r="0" b="0" a="255" g="0"/>
+    <currentLayer value="9"/>
+    <currentView m11="0.25" dy="0" m12="0" m21="0" m22="0.25" dx="0"/>
+    <fps value="24"/>
+    <isLoop value="false"/>
+    <isRangedPlayback value="false"/>
+    <markInFrame value="1"/>
+    <markOutFrame value="10"/>
+  </projectdata>
+  <object>
+    <layer id="1" width="1920" height="1080" visibility="1" name="Camera Layer" type="5">
+      <camera r="0" s="1" dy="0" frame="1" dx="0"/>
+    </layer>
+    <layer id="2" visibility="1" name="Vector Layer" type="2">
+      <image src="002.001.vec" frame="1"/>
+    </layer>
+    <layer id="3" visibility="1" name="Bitmap Layer" type="1">
+      <image topLeftY="-540" src="003.001.png" topLeftX="-960" frame="1"/>
+    </layer>
+    <layer id="4" visibility="1" name="Things Layer" type="1">
+      <image topLeftY="0" src="004.025.png" topLeftX="0" frame="25"/>
+      <image topLeftY="0" src="004.024.png" topLeftX="0" frame="24"/>
+      <image topLeftY="0" src="004.023.png" topLeftX="0" frame="23"/>
+      <image topLeftY="0" src="004.022.png" topLeftX="0" frame="22"/>
+      <image topLeftY="-315" src="004.021.png" topLeftX="-173" frame="21"/>
+      <image topLeftY="-315" src="004.020.png" topLeftX="-173" frame="20"/>
+      <image topLeftY="-315" src="004.019.png" topLeftX="-173" frame="19"/>
+      <image topLeftY="-315" src="004.018.png" topLeftX="-173" frame="18"/>
+      <image topLeftY="-315" src="004.017.png" topLeftX="-173" frame="17"/>
+      <image topLeftY="-315" src="004.016.png" topLeftX="-173" frame="16"/>
+      <image topLeftY="-315" src="004.015.png" topLeftX="-173" frame="15"/>
+      <image topLeftY="-315" src="004.014.png" topLeftX="-173" frame="14"/>
+      <image topLeftY="-315" src="004.013.png" topLeftX="-173" frame="13"/>
+      <image topLeftY="-315" src="004.012.png" topLeftX="-173" frame="12"/>
+      <image topLeftY="-315" src="004.011.png" topLeftX="-173" frame="11"/>
+      <image topLeftY="-315" src="004.010.png" topLeftX="-173" frame="10"/>
+      <image topLeftY="-315" src="004.009.png" topLeftX="-173" frame="9"/>
+      <image topLeftY="-315" src="004.008.png" topLeftX="-173" frame="8"/>
+      <image topLeftY="-315" src="004.007.png" topLeftX="-173" frame="7"/>
+      <image topLeftY="-315" src="004.006.png" topLeftX="-173" frame="6"/>
+      <image topLeftY="-315" src="004.005.png" topLeftX="-173" frame="5"/>
+      <image topLeftY="-315" src="004.004.png" topLeftX="-173" frame="4"/>
+      <image topLeftY="-315" src="004.003.png" topLeftX="-173" frame="3"/>
+      <image topLeftY="-315" src="004.002.png" topLeftX="-173" frame="2"/>
+      <image topLeftY="-315" src="004.001.png" topLeftX="-173" frame="1"/>
+    </layer>
+    <layer id="5" visibility="1" name="Thinks_quote" type="1">
+      <image topLeftY="-304" src="005.059.png" topLeftX="-566" frame="59"/>
+      <image topLeftY="-304" src="005.058.png" topLeftX="-566" frame="58"/>
+      <image topLeftY="-304" src="005.057.png" topLeftX="-566" frame="57"/>
+      <image topLeftY="-304" src="005.056.png" topLeftX="-566" frame="56"/>
+      <image topLeftY="-304" src="005.055.png" topLeftX="-566" frame="55"/>
+      <image topLeftY="-304" src="005.023.png" topLeftX="-566" frame="23"/>
+      <image topLeftY="0" src="005.001.png" topLeftX="0" frame="1"/>
+    </layer>
+    <layer id="7" visibility="1" name="Thinks_content" type="1">
+      <image topLeftY="-535" src="007.059.png" topLeftX="-957" frame="59"/>
+      <image topLeftY="-535" src="007.058.png" topLeftX="-957" frame="58"/>
+      <image topLeftY="-535" src="007.057.png" topLeftX="-957" frame="57"/>
+      <image topLeftY="-535" src="007.056.png" topLeftX="-957" frame="56"/>
+      <image topLeftY="-535" src="007.055.png" topLeftX="-957" frame="55"/>
+      <image topLeftY="-535" src="007.025.png" topLeftX="-957" frame="25"/>
+      <image topLeftY="-535" src="007.024.png" topLeftX="-957" frame="24"/>
+      <image topLeftY="0" src="007.001.png" topLeftX="0" frame="1"/>
+    </layer>
+    <layer id="9" visibility="1" name="Ideas_give" type="1">
+      <image topLeftY="0" src="009.098.png" topLeftX="0" frame="98"/>
+      <image topLeftY="-6" src="009.097.png" topLeftX="-283" frame="97"/>
+      <image topLeftY="-11" src="009.096.png" topLeftX="-280" frame="96"/>
+      <image topLeftY="-16" src="009.095.png" topLeftX="-277" frame="95"/>
+      <image topLeftY="-21" src="009.094.png" topLeftX="-274" frame="94"/>
+      <image topLeftY="-26" src="009.093.png" topLeftX="-271" frame="93"/>
+      <image topLeftY="-31" src="009.092.png" topLeftX="-268" frame="92"/>
+      <image topLeftY="-36" src="009.091.png" topLeftX="-265" frame="91"/>
+      <image topLeftY="-41" src="009.090.png" topLeftX="-262" frame="90"/>
+      <image topLeftY="-46" src="009.089.png" topLeftX="-259" frame="89"/>
+      <image topLeftY="-51" src="009.088.png" topLeftX="-256" frame="88"/>
+      <image topLeftY="-56" src="009.087.png" topLeftX="-253" frame="87"/>
+      <image topLeftY="-61" src="009.086.png" topLeftX="-250" frame="86"/>
+      <image topLeftY="-66" src="009.085.png" topLeftX="-247" frame="85"/>
+      <image topLeftY="-71" src="009.084.png" topLeftX="-244" frame="84"/>
+      <image topLeftY="-76" src="009.083.png" topLeftX="-241" frame="83"/>
+      <image topLeftY="-81" src="009.082.png" topLeftX="-238" frame="82"/>
+      <image topLeftY="-86" src="009.081.png" topLeftX="-235" frame="81"/>
+      <image topLeftY="-91" src="009.080.png" topLeftX="-232" frame="80"/>
+      <image topLeftY="-96" src="009.079.png" topLeftX="-229" frame="79"/>
+      <image topLeftY="-101" src="009.078.png" topLeftX="-226" frame="78"/>
+      <image topLeftY="-106" src="009.077.png" topLeftX="-223" frame="77"/>
+      <image topLeftY="-111" src="009.076.png" topLeftX="-220" frame="76"/>
+      <image topLeftY="-111" src="009.075.png" topLeftX="-220" frame="75"/>
+      <image topLeftY="-106" src="009.074.png" topLeftX="-223" frame="74"/>
+      <image topLeftY="-101" src="009.073.png" topLeftX="-226" frame="73"/>
+      <image topLeftY="-96" src="009.072.png" topLeftX="-229" frame="72"/>
+      <image topLeftY="-91" src="009.071.png" topLeftX="-232" frame="71"/>
+      <image topLeftY="-86" src="009.070.png" topLeftX="-235" frame="70"/>
+      <image topLeftY="-81" src="009.069.png" topLeftX="-238" frame="69"/>
+      <image topLeftY="-76" src="009.068.png" topLeftX="-241" frame="68"/>
+      <image topLeftY="-71" src="009.067.png" topLeftX="-244" frame="67"/>
+      <image topLeftY="-66" src="009.066.png" topLeftX="-247" frame="66"/>
+      <image topLeftY="-61" src="009.065.png" topLeftX="-250" frame="65"/>
+      <image topLeftY="-56" src="009.064.png" topLeftX="-253" frame="64"/>
+      <image topLeftY="-51" src="009.063.png" topLeftX="-256" frame="63"/>
+      <image topLeftY="-46" src="009.062.png" topLeftX="-259" frame="62"/>
+      <image topLeftY="-41" src="009.061.png" topLeftX="-262" frame="61"/>
+      <image topLeftY="-36" src="009.060.png" topLeftX="-265" frame="60"/>
+      <image topLeftY="-31" src="009.059.png" topLeftX="-268" frame="59"/>
+      <image topLeftY="-26" src="009.058.png" topLeftX="-271" frame="58"/>
+      <image topLeftY="-21" src="009.057.png" topLeftX="-274" frame="57"/>
+      <image topLeftY="-16" src="009.056.png" topLeftX="-277" frame="56"/>
+      <image topLeftY="-11" src="009.055.png" topLeftX="-280" frame="55"/>
+      <image topLeftY="-6" src="009.054.png" topLeftX="-283" frame="54"/>
+      <image topLeftY="0" src="009.001.png" topLeftX="0" frame="1"/>
+    </layer>
+    <layer id="8" visibility="1" name="Ideas_key" type="1">
+      <image topLeftY="0" src="008.098.png" topLeftX="0" frame="98"/>
+      <image topLeftY="-168" src="008.097.png" topLeftX="109" frame="97"/>
+      <image topLeftY="-168" src="008.096.png" topLeftX="109" frame="96"/>
+      <image topLeftY="-168" src="008.095.png" topLeftX="109" frame="95"/>
+      <image topLeftY="-168" src="008.094.png" topLeftX="109" frame="94"/>
+      <image topLeftY="-168" src="008.093.png" topLeftX="109" frame="93"/>
+      <image topLeftY="-168" src="008.092.png" topLeftX="109" frame="92"/>
+      <image topLeftY="-168" src="008.091.png" topLeftX="109" frame="91"/>
+      <image topLeftY="-168" src="008.090.png" topLeftX="109" frame="90"/>
+      <image topLeftY="-168" src="008.089.png" topLeftX="109" frame="89"/>
+      <image topLeftY="-168" src="008.088.png" topLeftX="109" frame="88"/>
+      <image topLeftY="-168" src="008.087.png" topLeftX="109" frame="87"/>
+      <image topLeftY="-168" src="008.086.png" topLeftX="109" frame="86"/>
+      <image topLeftY="-168" src="008.085.png" topLeftX="109" frame="85"/>
+      <image topLeftY="-168" src="008.084.png" topLeftX="109" frame="84"/>
+      <image topLeftY="-168" src="008.083.png" topLeftX="109" frame="83"/>
+      <image topLeftY="-168" src="008.082.png" topLeftX="109" frame="82"/>
+      <image topLeftY="-168" src="008.081.png" topLeftX="109" frame="81"/>
+      <image topLeftY="-168" src="008.080.png" topLeftX="109" frame="80"/>
+      <image topLeftY="-168" src="008.079.png" topLeftX="109" frame="79"/>
+      <image topLeftY="-168" src="008.078.png" topLeftX="109" frame="78"/>
+      <image topLeftY="-168" src="008.077.png" topLeftX="109" frame="77"/>
+      <image topLeftY="-168" src="008.076.png" topLeftX="109" frame="76"/>
+      <image topLeftY="-168" src="008.075.png" topLeftX="109" frame="75"/>
+      <image topLeftY="-163" src="008.074.png" topLeftX="106" frame="74"/>
+      <image topLeftY="-158" src="008.073.png" topLeftX="103" frame="73"/>
+      <image topLeftY="-153" src="008.072.png" topLeftX="100" frame="72"/>
+      <image topLeftY="-148" src="008.071.png" topLeftX="97" frame="71"/>
+      <image topLeftY="-143" src="008.070.png" topLeftX="94" frame="70"/>
+      <image topLeftY="-138" src="008.069.png" topLeftX="91" frame="69"/>
+      <image topLeftY="-133" src="008.068.png" topLeftX="88" frame="68"/>
+      <image topLeftY="-128" src="008.067.png" topLeftX="85" frame="67"/>
+      <image topLeftY="-123" src="008.066.png" topLeftX="82" frame="66"/>
+      <image topLeftY="-118" src="008.065.png" topLeftX="79" frame="65"/>
+      <image topLeftY="-113" src="008.064.png" topLeftX="76" frame="64"/>
+      <image topLeftY="-108" src="008.063.png" topLeftX="73" frame="63"/>
+      <image topLeftY="-103" src="008.062.png" topLeftX="70" frame="62"/>
+      <image topLeftY="-98" src="008.061.png" topLeftX="67" frame="61"/>
+      <image topLeftY="-93" src="008.060.png" topLeftX="64" frame="60"/>
+      <image topLeftY="-88" src="008.059.png" topLeftX="61" frame="59"/>
+      <image topLeftY="-83" src="008.058.png" topLeftX="58" frame="58"/>
+      <image topLeftY="-78" src="008.057.png" topLeftX="55" frame="57"/>
+      <image topLeftY="-73" src="008.056.png" topLeftX="52" frame="56"/>
+      <image topLeftY="-68" src="008.055.png" topLeftX="49" frame="55"/>
+      <image topLeftY="-63" src="008.054.png" topLeftX="46" frame="54"/>
+      <image topLeftY="0" src="008.001.png" topLeftX="0" frame="1"/>
+    </layer>
+    <layer id="10" visibility="1" name="Ideas_clip" type="1">
+      <image topLeftY="-8" src="010.054.png" topLeftX="-961" frame="54"/>
+      <image topLeftY="0" src="010.001.png" topLeftX="0" frame="1"/>
+    </layer>
+    <layer id="11" visibility="1" name="Copyright" type="1">
+      <image topLeftY="406" src="011.001.png" topLeftX="-157" frame="1"/>
+    </layer>

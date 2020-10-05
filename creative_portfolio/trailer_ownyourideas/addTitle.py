@@ -27,11 +27,13 @@ title = json.load(open(sys.argv[1], "r"))
 
 
 DEBUG = not(True)
+LINE_BREAK = "\n"
 #TITLE_FONT = ImageFont.truetype("Segoe Print", 72)
 TITLE_FONT    = ImageFont.truetype("c:\\Windows\\Fonts\\segoepr.ttf", 72)
 AUDIENCE_FONT = ImageFont.truetype("c:\\Windows\\Fonts\\times.ttf", 48) # 36
 START_FRAME   = 98
-END_FRAME     = START_FRAME + 100
+#END_FRAME     = START_FRAME + 100
+END_FRAME     = START_FRAME + 90
 
 
 
@@ -101,12 +103,6 @@ def drawAudience(audiences, topics):
     return img
 
 def createAudienceLayer():
-    try:
-        shutil.rmtree("./ownyourideas")
-    except:
-        pass
-    with zipfile.ZipFile("./ownyourideas.tpl", 'r') as zip_ref:
-        zip_ref.extractall("./ownyourideas")
     img = drawAudience(title["audiences"], title["topics"])
     # Do fade
     alpha = 1.0
@@ -129,18 +125,46 @@ def createAudienceLayer():
             stillImg = frameImg
         stillImg.save(fileName)
 
+def createFadeOutLayer():
+    for idx in range(END_FRAME, END_FRAME + 10):
+        opLv = (idx - END_FRAME) * 25 + 25
+        if opLv > 255:
+            opLv = 255
+        fileName = "014.{:03d}".format(idx) + ".png"
+        fileName = "./ownyourideas/data/" + fileName
+        opImg = Image.new('RGBA', (1920, 1080), (255, 255, 255, opLv))
+        opImg.save(fileName)
+    # main.xml: create layer 14
+    bufStr = LINE_BREAK + '    '
+    bufStr += '<layer id="14" visibility="1" name="Fade out" type="1">'
+    for idx in reversed(range(END_FRAME, END_FRAME + 10)):
+        bufStr += LINE_BREAK + '      '
+        bufStr += '<image topLeftY="-540" src="014.{:03d}.png" topLeftX="-960" frame="{:d}"/>'.format(idx, idx)
+    bufStr += LINE_BREAK + '      '
+    bufStr += '<image topLeftY="0" src="014.001.png" topLeftX="0" frame="1"/>'
+    bufStr += LINE_BREAK + '    '
+    bufStr += '</layer>'
+    return bufStr
+
 
 
 lineCount = len(title['title'])
-LINE_BREAK = "\n"
 if lineCount == 1:
-    # create Title Layer Frame
+    try:
+        shutil.rmtree("./ownyourideas")
+    except:
+        pass
+    with zipfile.ZipFile("./ownyourideas.tpl", 'r') as zip_ref:
+        zip_ref.extractall("./ownyourideas")
+
+    # create Title Layer Frame (12)
     titleImg = drawText(title['title'][0])
     (titleW, titleH) = titleImg.size
     if titleW > 874:
         print("Title width size must be limitted to 874 pixels.")
         sys.exit()
 
+    # create Audience Layer Frame (13)
     createAudienceLayer()
 
     # main.xml: create layer 12
@@ -174,10 +198,16 @@ if lineCount == 1:
     bufStr += '<image topLeftY="0" src="013.001.png" topLeftX="0" frame="1"/>'
     bufStr += LINE_BREAK + '    '
     bufStr += '</layer>'
+
+    # do Fade out
+    bufStr += createFadeOutLayer()
+
+    # Finalize main.xml`
     bufStr += LINE_BREAK + '  '
     bufStr += '</object>'
     bufStr += LINE_BREAK
     bufStr += '</document>'
+    # Save main.xml
     mainXml = open("./ownyourideas/main.xml", "w")
     mainXml.write(bufStr)
     mainXml.close()

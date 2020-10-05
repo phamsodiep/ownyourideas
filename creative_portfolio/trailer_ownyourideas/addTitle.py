@@ -26,7 +26,7 @@ title = json.load(open(sys.argv[1], "r"))
 
 
 
-DEBUG = True
+DEBUG = not(True)
 #TITLE_FONT = ImageFont.truetype("Segoe Print", 72)
 TITLE_FONT    = ImageFont.truetype("c:\\Windows\\Fonts\\segoepr.ttf", 72)
 AUDIENCE_FONT = ImageFont.truetype("c:\\Windows\\Fonts\\times.ttf", 48) # 36
@@ -125,7 +125,7 @@ def createAudienceLayer():
         else:
             frameImg = Image.blend(img, opImg, alpha)
             frameImg = setTransparent(frameImg)
-            frameImg = drawTitleVerticalClipRegion(frameImg)
+            #frameImg = drawTitleVerticalClipRegion(frameImg)
             stillImg = frameImg
         stillImg.save(fileName)
 
@@ -158,9 +158,9 @@ if lineCount == 1:
         fileName = "./ownyourideas/data/" + fileName
         titleImg.save(fileName)
         bufStr += LINE_BREAK + '      '
-        bufStr += '<image topLeftY="-295" frame="{:d}" topLeftX="{:d}" src="012.{:03d}.png"/>'.format(idx, topLeftX, idx)
+        bufStr += '<image topLeftY="-295" src="012.{:03d}.png" topLeftX="{:d}" frame="{:d}"/>'.format(idx, topLeftX, idx)
     bufStr += LINE_BREAK + '      '
-    bufStr += '<image topLeftY="0" frame="1" topLeftX="0" src="012.001.png"/>'
+    bufStr += '<image topLeftY="0" src="012.001.png" topLeftX="0" frame="1"/>'
     bufStr += LINE_BREAK + '    '
     bufStr += '</layer>'
 
@@ -169,9 +169,9 @@ if lineCount == 1:
     bufStr += '<layer id="13" visibility="1" name="Audiences" type="1">'
     for idx in reversed(range(START_FRAME, END_FRAME)):
         bufStr += LINE_BREAK + '      '
-        bufStr += '<image frame="{:d}" topLeftX="-960" topLeftY="-540" src="013.{:03d}.png"/>'.format(idx, idx)
+        bufStr += '<image topLeftY="-540" src="013.{:03d}.png" topLeftX="-960" frame="{:d}"/>'.format(idx, idx)
     bufStr += LINE_BREAK + '      '
-    bufStr += '<image frame="1" topLeftX="0" topLeftY="0" src="013.001.png"/>'
+    bufStr += '<image topLeftY="0" src="013.001.png" topLeftX="0" frame="1"/>'
     bufStr += LINE_BREAK + '    '
     bufStr += '</layer>'
     bufStr += LINE_BREAK + '  '
